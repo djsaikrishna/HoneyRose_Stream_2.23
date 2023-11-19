@@ -11,8 +11,8 @@ load_dotenv()
 class Var(object):
     MULTI_CLIENT = False
     API_ID = int(environ.get("API_ID"), 15882573)
-    API_HASH = str(environ.get("API_HASH"), dddd64edfc5326e4a35e448347b83e2d)
-    BOT_TOKEN = str(environ.get("BOT_TOKEN"), 5988008223:AAE3W9GVHdbAuYUIhvodhxrTI-5SYslJS7Q)
+    API_HASH = str(environ.get("API_HASH"), "dddd64edfc5326e4a35e448347b83e2d")
+    BOT_TOKEN = str(environ.get("BOT_TOKEN"), "5988008223:AAE3W9GVHdbAuYUIhvodhxrTI-5SYslJS7Q")
     SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     WORKERS = int(environ.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     BIN_CHANNEL = int(
@@ -26,7 +26,7 @@ class Var(object):
     HASH_LENGTH = int(environ.get("HASH_LENGTH", 6))
     if not 5 < HASH_LENGTH < 64:
         sys.exit("Hash length should be greater than 5 and less than 64")
-    FQDN = str(environ.get("FQDN", https://honeylink-ca10ec152341.herokuapp.com))
+    FQDN = str(environ.get("FQDN", "https://honeylink-ca10ec152341.herokuapp.com"))
     URL = "http{}://{}{}/".format(
             "s" if HAS_SSL else "", FQDN, "" if NO_PORT else ":" + str(PORT)
         )

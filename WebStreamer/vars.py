@@ -29,7 +29,7 @@ class Var(object):
     FQDN = str(environ.get("FQDN", "honeylink-ca10ec152341.herokuapp.com"))
     URL = "http{}://{}{}/".format(
             "s" if HAS_SSL else "", FQDN, "" if NO_PORT else ":" + str(PORT)
-        
+    )
     KEEP_ALIVE = str(environ.get("KEEP_ALIVE", "1").lower()) in  ("1", "true", "t", "yes", "y")
     DEBUG = str(environ.get("DEBUG", "1").lower()) in ("1", "true", "t", "yes", "y")
     USE_SESSION_FILE = str(environ.get("USE_SESSION_FILE", "1").lower()) in ("1", "true", "t", "yes", "y")

@@ -26,7 +26,7 @@ class Var(object):
     HASH_LENGTH = int(environ.get("HASH_LENGTH", 6))
     if not 5 < HASH_LENGTH < 64:
         sys.exit("Hash length should be greater than 5 and less than 64")
-    FQDN = str(environ.get("FQDN", "honeyrose143-b8bb9195824f.herokuapp.com"))
+    FQDN = str(environ.get("FQDN", "tg.pawg.pro"))
     URL = "http{}://{}{}/".format(
             "s" if HAS_SSL else "", FQDN, "" if NO_PORT else ":" + str(PORT)
     )

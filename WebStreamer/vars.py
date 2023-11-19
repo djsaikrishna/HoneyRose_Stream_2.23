@@ -30,7 +30,7 @@ class Var(object):
     URL = "http{}://{}{}/".format(
             "s" if HAS_SSL else "", FQDN, "" if NO_PORT else ":" + str(PORT)
         
-    KEEP_ALIVE = str(environ.get("KEEP_ALIVE", "0").lower()) in  ("1", "true", "t", "yes", "y")
-    DEBUG = str(environ.get("DEBUG", "0").lower()) in ("1", "true", "t", "yes", "y")
-    USE_SESSION_FILE = str(environ.get("USE_SESSION_FILE", "0").lower()) in ("1", "true", "t", "yes", "y")
+    KEEP_ALIVE = str(environ.get("KEEP_ALIVE", "yes").lower()) in  ("1", "true", "t", "yes", "y")
+    DEBUG = str(environ.get("DEBUG", "yes").lower()) in ("1", "true", "t", "yes", "y")
+    USE_SESSION_FILE = str(environ.get("USE_SESSION_FILE", "yes").lower()) in ("1", "true", "t", "yes", "y")
     ALLOWED_USERS = [x.strip("@ ") for x in str(environ.get("ALLOWED_USERS", "") or "").split(",") if x.strip("@ ")]

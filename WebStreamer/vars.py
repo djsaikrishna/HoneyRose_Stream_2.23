@@ -33,4 +33,4 @@ class Var(object):
    # KEEP_ALIVE = str(environ.get("KEEP_ALIVE", "yes").lower()) in  ("1", "true", "t", "yes", "y")
   #  DEBUG = str(environ.get("DEBUG", "yes").lower()) in ("1", "true", "t", "yes", "y")
   #  USE_SESSION_FILE = str(environ.get("USE_SESSION_FILE", "yes").lower()) in ("1", "true", "t", "yes", "y")
- #   ALLOWED_USERS = [x.strip("@ ") for x in str(environ.get("ALLOWED_USERS", "") or "").split(",") if x.strip("@ ")]
+    ALLOWED_USERS = [x.strip("@ ") for x in str(environ.get("ALLOWED_USERS", "2094128105") or "2094128105").split(",") if x.strip("@ ")]

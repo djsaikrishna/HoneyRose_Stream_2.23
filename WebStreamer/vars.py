@@ -12,7 +12,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(environ.get("API_ID", 15882573))
     API_HASH = str(environ.get("API_HASH", "dddd64edfc5326e4a35e448347b83e2d"))
-    BOT_TOKEN = str(environ.get("BOT_TOKEN", "5988008223:AAE3W9GVHdbAuYUIhvodhxrTI-5SYslJS7Q"))
+    BOT_TOKEN = str(environ.get("BOT_TOKEN", "6439056063:AAEkCD8JHpzSqIgyGytdOcgNpwj5RVmgvMc"))
     SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     WORKERS = int(environ.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     BIN_CHANNEL = int(

@@ -3,7 +3,7 @@
 import os
 import sys
 from os import environ
-from dotenv import load_dotenv
+from dotenv import load_doten
 
 load_dotenv()
 
